@@ -17,6 +17,8 @@ app.post("/signup",(req,res)=>{
     if(!password||password.length<8 || password.length>16){
         res.send("Password length should be greater than 8 or less than or equal to 16. ");
     }
+
+    res.send("Successful!");
 });
 
 app.listen(PORT,()=>{
